@@ -121,17 +121,16 @@
             max-width: 1100px;
             margin: 3rem auto;
             padding: 0 1.5rem;
-        }
-
-        .grid-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 2rem;
         }
 
-        /* Full Width Section for Courses */
-        .full-width-section {
-            grid-column: 1 / -1;
+        /* Side-by-Side Grid Layout for Services & Contact */
+        .side-by-side-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
         /* Styled Sections */
@@ -234,27 +233,16 @@
     </div>
 
     <!-- Main Content Sections -->
-    <main class="grid-layout">
+    <main>
         
-        <!-- About Section -->
+        <!-- About Section (Top Full Width) -->
         <section id="about">
             <h2>Build Up Your Career</h2>
             <p>New Vision Education Solution Pvt. Ltd. मा हामी तपाईंको सुनौलो भविष्य र करियर निर्माणका लागि उत्कृष्ट शैक्षिक मार्गदर्शन प्रदान गर्दछौं। हामी अहिले खुल्ला छौं र तपाईंलाई परीक्षामा उत्कृष्ट अंक ल्याउन मद्दत गर्न तयार छौं।</p>
         </section>
 
-        <!-- Features & Services Section -->
-        <section id="features">
-            <h2>Our Services</h2>
-            <ul>
-                <li>प्रत्यक्ष र भौतिक अन्तर्क्रियात्मक कक्षाहरू</li>
-                <li>बिहान र बेलुकीको सिफ्टमा विशेष व्यवस्था</li>
-                <li>शैक्षिक सामग्रीहरूको लागि 'Curbside Pickup' उपलब्ध</li>
-                <li>अनुभवी शिक्षक र सहजकर्ताहरूद्वारा अध्यापन</li>
-            </ul>
-        </section>
-
-        <!-- NEW: Courses Section (Full Width Grid) -->
-        <section id="courses" class="full-width-section">
+        <!-- Courses Section -->
+        <section id="courses">
             <h2>Our Courses (हाम्रा कक्षाहरू)</h2>
             <p>तपाईंको आवश्यकता अनुसार तलका विधामा विशेष तयारी कक्षाहरू सञ्चालन भइरहेका छन्:</p>
             
@@ -282,14 +270,30 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Find Us Here</h2>
-            <p style="margin-bottom: 1rem;">नयाँ ब्याच वा समय तालिकाबारे थप जानकारीका लागि हामीलाई सिधै सम्पर्क गर्नुहोस्:</p>
-            <p><strong>📍 Address:</strong> Laliguras chowk, Itahari, Nepal</p>
-            <p><strong>📞 Phone:</strong> +977 980-2792373 / 9802792371</p>
-            <p><strong>📸 Instagram:</strong> @new_vision_itahari</p>
-        </section>
+        <!-- Side-by-Side Wrapper for Our Services and Find Us Here -->
+        <div class="side-by-side-grid">
+            
+            <!-- Features & Services Section -->
+            <section id="features">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>प्रत्यक्ष र भौतिक अन्तर्क्रियात्मक कक्षाहरू</li>
+                    <li>बिहान र बेलुकीको सिफ्टमा विशेष व्यवस्था</li>
+                    <li>शैक्षिक सामग्रीहरूको लागि 'Curbside Pickup' उपलब्ध</li>
+                    <li>अनुभवी शिक्षक र सहजकर्ताहरूद्वारा अध्यापन</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section (Moved right next to Our Services) -->
+            <section id="contact">
+                <h2>Find Us Here</h2>
+                <p style="margin-bottom: 1rem;">नयाँ ब्याच वा समय तालिकाबारे थप जानकारीका लागि हामीलाई सिधै सम्पर्क गर्नुहोस्:</p>
+                <p><strong>📍 Address:</strong> Laliguras chowk, Itahari, Nepal</p>
+                <p><strong>📞 Phone:</strong> +977 980-2792373 / 9802792371</p>
+                <p><strong>📸 Instagram:</strong> @new_vision_itahari</p>
+            </section>
+
+        </div>
 
     </main>
 
