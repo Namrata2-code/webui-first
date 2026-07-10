@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Vision Education Solution Pvt. Ltd.</title>
+    <style>
+        /* Base Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #008080; 
+            color: white;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #008080 0%, #00bcbc 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 1.5rem;
+            position: relative;
+        }
+
+        .hero-banner .badge {
+            background-color: #ff5722;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .hero-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-banner p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+
+        /* Trust Badge Style */
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .rating-badge span {
+            color: #ffd700;
+            margin-right: 5px;
+            font-size: 1.2rem;
+        }
+
+        .btn-enroll {
+            background-color: #ff5722;
+            color: white;
+            padding: 0.8rem 2.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn-enroll:hover {
+            background-color: #e64a19;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Container */
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Styled Sections */
+        section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #008080;
+        }
+
+        section h2 {
+            color: #008080;
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+        }
+
+        /* List Items Styling */
+        section ul {
+            list-style: none;
+        }
+
+        section ul li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        section ul li::before {
+            content: "✓";
+            color: #ff5722;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <h1>New Vision Education Solution</h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <span class="badge">Online & Physical Classes</span>
+        <h2>BIGGEST EXAM PREPARATION BATCH</h2>
+        <p>SEE र NEB का विद्यार्थीहरूका लागि परीक्षा नसकिँदासम्म सञ्चालन हुने विशेष तयारी कक्षाहरू।</p>
+        <button class="btn-enroll" id="enrollBtn">भर्ना हुनुहोस्</button>
+        <br>
+        <div class="rating-badge">
+            <span>★</span> <strong>100% Recommended</strong> &nbsp;(11 Reviews)
+        </div>
+    </div>
+
+    <!-- Main Content Sections -->
+    <main class="grid-layout">
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>Build Up Your Career</h2>
+            <p>New Vision Education Solution Pvt. Ltd. मा हामी तपाईंको सुनौलो भविष्य र करियर निर्माणका लागि उत्कृष्ट शैक्षिक मार्गदर्शन प्रदान गर्दछौं। हामी अहिले खुल्ला छौं र तपाईंलाई परीक्षामा उत्कृष्ट अंक ल्याउन मद्दत गर्न तयार छौं।</p>
+        </section>
+
+        <!-- Features & Services Section -->
+        <section id="features">
+            <h2>Our Services</h2>
+            <ul>
+                <li>प्रत्यक्ष र भौतिक अन्तर्क्रियात्मक कक्षाहरू</li>
+                <li>SEE र NEB का लागि विशेष तयारी ढाँचा</li>
+                <li>शैक्षिक सामग्रीहरूको लागि 'Curbside Pickup' उपलब्ध</li>
+                <li>अनुभवी शिक्षक र सहजकर्ताहरूद्वारा अध्यापन</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Find Us Here</h2>
+            <p style="margin-bottom: 1rem;">नयाँ ब्याच वा समय तालिकाबारे थप जानकारीका लागि हामीलाई सिधै सम्पर्क गर्नुहोस्:</p>
+            <p><strong>📍 Address:</strong> Laliguras chowk, Itahari, Nepal</p>
+            <p><strong>📞 Phone:</strong> +977 980-2792373 / 9802792371</p>
+            <p><strong>📸 Instagram:</strong> @new_vision_itahari</p>
+        </section>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer>
+        <p>&copy; 2026 New Vision Education Solution Pvt. Ltd. | विद्यार्थीको सफलता नै हाम्रो चाहना</p>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        document.getElementById('enrollBtn').addEventListener('click', function() {
+            alert('SEE/NEB ब्याचमा आफ्नो सिट सुरक्षित गर्नका लागि कृपया हाम्रो हेल्प डेस्क नम्बर +977 980-2792373 मा सिधै फोन गर्नुहोस्!');
+        });
+    </script>
+
+</body>
+</html>
