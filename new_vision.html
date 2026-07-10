@@ -129,6 +129,11 @@
             gap: 2rem;
         }
 
+        /* Full Width Section for Courses */
+        .full-width-section {
+            grid-column: 1 / -1;
+        }
+
         /* Styled Sections */
         section {
             background: white;
@@ -142,6 +147,33 @@
             color: #008080;
             margin-bottom: 1.2rem;
             font-size: 1.5rem;
+        }
+
+        /* Course Grid Layout */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .course-card {
+            background: #fdfdfd;
+            border: 1px solid #eef2f3;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #ff5722;
+        }
+
+        .course-card h3 {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-card p {
+            font-size: 0.95rem;
+            color: #666;
         }
 
         /* List Items Styling */
@@ -183,6 +215,7 @@
         </div>
         <nav>
             <a href="#about">About</a>
+            <a href="#courses">Courses</a>
             <a href="#features">Services</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -191,8 +224,8 @@
     <!-- Hero Banner -->
     <div class="hero-banner">
         <span class="badge">Online & Physical Classes</span>
-        <h2>BIGGEST EXAM PREPARATION BATCH</h2>
-        <p>SEE र NEB का विद्यार्थीहरूका लागि परीक्षा नसकिँदासम्म सञ्चालन हुने विशेष तयारी कक्षाहरू।</p>
+        <h2>EXAM PREPARATION & ACADEMIC CLASSES</h2>
+        <p>लोकसेवा, बैंकिङ, ब्याचलर्स तथा स्कूल/प्लस टु लेभलका उत्कृष्ट तयारी कक्षाहरू।</p>
         <button class="btn-enroll" id="enrollBtn">भर्ना हुनुहोस्</button>
         <br>
         <div class="rating-badge">
@@ -214,10 +247,39 @@
             <h2>Our Services</h2>
             <ul>
                 <li>प्रत्यक्ष र भौतिक अन्तर्क्रियात्मक कक्षाहरू</li>
-                <li>SEE र NEB का लागि विशेष तयारी ढाँचा</li>
+                <li>बिहान र बेलुकीको सिफ्टमा विशेष व्यवस्था</li>
                 <li>शैक्षिक सामग्रीहरूको लागि 'Curbside Pickup' उपलब्ध</li>
                 <li>अनुभवी शिक्षक र सहजकर्ताहरूद्वारा अध्यापन</li>
             </ul>
+        </section>
+
+        <!-- NEW: Courses Section (Full Width Grid) -->
+        <section id="courses" class="full-width-section">
+            <h2>Our Courses (हाम्रा कक्षाहरू)</h2>
+            <p>तपाईंको आवश्यकता अनुसार तलका विधामा विशेष तयारी कक्षाहरू सञ्चालन भइरहेका छन्:</p>
+            
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>लोकसेवा तयारी</h3>
+                    <p>नायब सुब्बा (नासु) र खरिदार पदका लागि पूर्ण पाठ्यक्रममा आधारित विशेष तयारी कक्षाहरू।</p>
+                </div>
+                <div class="course-card">
+                    <h3>Banking Classes</h3>
+                    <p>नेपाल राष्ट्र बैंक (NRB) र राष्ट्रिय बाणिज्य बैंक (RBB) का लागि लिखित तथा अनलाइन लक्षित विशेष क्लास।</p>
+                </div>
+                <div class="course-card">
+                    <h3>Bachelors Classes</h3>
+                    <p>BBS / BBA तहका लागि Accounting (एकाउन्टिङ) र Math (म्याथ) विषयका विशेष ट्युसन कक्षाहरू।</p>
+                </div>
+                <div class="course-card">
+                    <h3>+2 Classes</h3>
+                    <p>कक्षा ११ र १२ (+2) का विद्यार्थीहरूका लागि नियमित तथा बोर्ड परीक्षा विशेष तयारी कक्षाहरू।</p>
+                </div>
+                <div class="course-card">
+                    <h3>SEE & NEB</h3>
+                    <p>विद्यालय स्तरको अन्तिम परीक्षा (SEE) र राष्ट्रिय परीक्षा बोर्ड (NEB) को अन्तिम तयारी ब्याच।</p>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
@@ -239,7 +301,7 @@
     <!-- Interactive JavaScript -->
     <script>
         document.getElementById('enrollBtn').addEventListener('click', function() {
-            alert('SEE/NEB ब्याचमा आफ्नो सिट सुरक्षित गर्नका लागि कृपया हाम्रो हेल्प डेस्क नम्बर +977 980-2792373 मा सिधै फोन गर्नुहोस्!');
+            alert('सिट सुरक्षित गर्न वा कोर्षहरूको थप जानकारीका लागि कृपया हाम्रो हेल्प डेस्क नम्बर +977 980-2792373 मा सिधै फोन गर्नुहोस्!');
         });
     </script>
 
